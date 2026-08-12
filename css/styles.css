@@ -4,8 +4,16 @@
 /*GLOBAL*/
 body {
     padding-top: 5rem;
-
+   background-color: #000;
+  background-image:
+    radial-gradient(2px 2px at 20% 30%, #fff 0, transparent 50%),
+    radial-gradient(2px 2px at 70% 80%, #fff 0, transparent 50%),
+    radial-gradient(2px 2px at 40% 60%, #fff 0, transparent 50%),
+    radial-gradient(2px 2px at 90% 20%, #fff 0, transparent 50%);
+  background-size: 200px 200px;
+  background-repeat: repeat;
 }
+
 
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Playfair Display', serif;
@@ -16,7 +24,7 @@ main {
     padding: 20px;
 }
 main.container-fluid {
-    width: 50%;
+    width: 100%;
 }
 
 p {
@@ -43,7 +51,6 @@ margin-right: 10px;
 img.dibley {
     max-width: 100%
 }
-
 .wrapper {
     display: grid;
     grid-template-columns: 1fr;
@@ -99,4 +106,38 @@ img.dibley {
     grid-column: 1/ 4;
     grid-row: 6 / 7;
     background-color: #978F66;
+}
+
+.contact-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: grey;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.contact-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-page fieldset {
+         text-align: center;
+         padding:1em;
+         border-radius: 10%;
+}
+.contact-page label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .contact-page {
+        padding: 10px;
+    }
 }
