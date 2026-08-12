@@ -51,24 +51,12 @@ margin-right: 10px;
 img.dibley {
     max-width: 100%
 }
-.wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr; 
-    background-color: #FBF5DD;
-    color: white;
-    transition: all 0.8s ease-in-out;
-}
 
-.wrapper:hover {
+.wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px; 
-    background-color: #FBF5DD;
-    color: white;
-    transform: scale(1.1);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    grid-gap: 10px;
 }
 
 .box1 {
