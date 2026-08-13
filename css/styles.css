@@ -146,3 +146,22 @@ img.dibley {
         text-align: center;
     }
 }
+#about-container {
+    max-width: 700px;        
+    margin: 0 auto;          
+    text-align: center;      
+    padding: 40px 20px;
+}
+
+#about-container img {
+    width: 200px;            
+    height: auto;
+    border-radius: 10px;     
+    margin-bottom: 20px;
+}
+
+#content {
+    text-align: left;        
+    margin-top: 20px;
+    line-height: 1.6;
+    font-size: 1.1rem;
