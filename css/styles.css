@@ -4,8 +4,16 @@
 /*GLOBAL*/
 body {
     padding-top: 5rem;
-
+   background-color: #000;
+  background-image:
+    radial-gradient(2px 2px at 20% 30%, #fff 0, transparent 50%),
+    radial-gradient(2px 2px at 70% 80%, #fff 0, transparent 50%),
+    radial-gradient(2px 2px at 40% 60%, #fff 0, transparent 50%),
+    radial-gradient(2px 2px at 90% 20%, #fff 0, transparent 50%);
+  background-size: 200px 200px;
+  background-repeat: repeat;
 }
+
 
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Playfair Display', serif;
@@ -16,7 +24,7 @@ main {
     padding: 20px;
 }
 main.container-fluid {
-    width: 50%;
+    width: 100%;
 }
 
 p {
@@ -46,22 +54,9 @@ img.dibley {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr; 
-    background-color: #FBF5DD;
-    color: white;
-    transition: all 0.8s ease-in-out;
-}
-
-.wrapper:hover {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px; 
-    background-color: #FBF5DD;
-    color: white;
-    transform: scale(1.1);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    grid-gap: 10px;
 }
 
 .box1 {
@@ -100,3 +95,73 @@ img.dibley {
     grid-row: 6 / 7;
     background-color: #978F66;
 }
+
+.contact-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: grey;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.contact-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-page fieldset {
+         text-align: center;
+         padding:1em;
+         border-radius: 10%;
+}
+.contact-page label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Global responsive adjustments */
+@media (max-width: 768px) {
+
+    /* Make headings smaller on mobile */
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    /* Add padding to all main content */
+    main {
+        padding: 10px;
+    }
+
+    /* Make images scale properly */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Footer spacing */
+    footer {
+        padding: 20px 10px;
+        text-align: center;
+    }
+}
+#about-container {
+    max-width: 700px;        
+    margin: 0 auto;          
+    text-align: center;      
+    padding: 40px 20px;
+}
+
+#about-container img {
+    width: 200px;            
+    height: auto;
+    border-radius: 10px;     
+    margin-bottom: 20px;
+}
+
+#content {
+    text-align: left;        
+    margin-top: 20px;
+    line-height: 1.6;
+    font-size: 1.1rem;
